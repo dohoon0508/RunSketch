@@ -1,0 +1,37 @@
+/* App.css는 index.css에서 전역 스타일을 정의했으므로 여기서는 추가 스타일만 정의 */
+
+.App {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .route-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .info-item {
+    padding: 12px;
+  }
+  
+  .info-value {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .route-info {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+  }
+}
